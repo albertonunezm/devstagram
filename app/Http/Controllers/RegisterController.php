@@ -19,6 +19,10 @@ class RegisterController extends Controller
         //dd($request);
         //dd($request->get('name'));
 
+        // Modificar Request
+
+        $request->request->add(['username' => Str::slug($request->username)]);
+
         // Validación
 
         $this->validate($request, [
@@ -28,11 +32,26 @@ class RegisterController extends Controller
             'password' => 'required|confirmed|min:6'
         ]);
 
+        // Registrando en BD
+
         User::create([
             'name' => $request->name,
-            'username' => Str::lower($request->username),
+            'username' => $request->username,
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ]);
+
+        //Autenticar Usuario
+/*         auth()->attempt([
+            'email' => $request->email,
+            'password' => $request->password
+        ]);
+ */
+
+        auth()->attempt($request->only('email','password'));
+        
+        // Redireccion
+
+        return redirect()->route('posts.index');
     }
 }
