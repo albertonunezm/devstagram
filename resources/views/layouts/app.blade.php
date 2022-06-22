@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        @stack('styles')
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <title>DevStagram - @yield('titulo')</title>
         <script src="{{ asset('js/app.js') }}"></script>

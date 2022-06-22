@@ -554,6 +554,12 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -566,12 +572,6 @@ video {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-.mt-5 {
-  margin-top: 1.25rem;
-}
 .block {
   display: block;
 }
@@ -580,6 +580,9 @@ video {
 }
 .h-6 {
   height: 1.5rem;
+}
+.h-96 {
+  height: 24rem;
 }
 .w-full {
   width: 100%;
@@ -614,8 +617,14 @@ video {
 .border {
   border-width: 1px;
 }
+.border-2 {
+  border-width: 2px;
+}
 .border-b {
   border-bottom-width: 1px;
+}
+.border-dashed {
+  border-style: dashed;
 }
 .border-red-500 {
   --tw-border-opacity: 1;
@@ -643,11 +652,11 @@ video {
 .p-6 {
   padding: 1.5rem;
 }
-.p-3 {
-  padding: 0.75rem;
-}
 .p-2 {
   padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .p-10 {
   padding: 2.5rem;
@@ -667,6 +676,10 @@ video {
 .text-center {
   text-align: center;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -675,41 +688,37 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
 .font-bold {
   font-weight: 700;
-}
-.font-black {
-  font-weight: 900;
 }
 .font-normal {
   font-weight: 400;
 }
+.font-black {
+  font-weight: 900;
+}
 .uppercase {
   text-transform: uppercase;
 }
-.text-gray-500 {
+.text-gray-700 {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
-.text-gray-700 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
