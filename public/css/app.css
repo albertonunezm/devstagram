@@ -588,6 +588,9 @@ video {
 .-ml-px {
   margin-left: -1px;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .block {
   display: block;
 }
@@ -611,6 +614,9 @@ video {
 }
 .h-5 {
   height: 1.25rem;
+}
+.max-h-96 {
+  max-height: 24rem;
 }
 .w-full {
   width: 100%;
@@ -650,6 +656,9 @@ video {
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 .rounded-lg {
   border-radius: 0.5rem;
@@ -703,6 +712,10 @@ video {
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 .p-5 {
   padding: 1.25rem;
